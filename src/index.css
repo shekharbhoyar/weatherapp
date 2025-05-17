@@ -1,0 +1,31 @@
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ad0bf8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container input {
+  width: 100%; /* Make input take full width of container */
+  height: 40px; /* Increase height */
+  padding: 8px 12px; /* Add some padding inside */
+  font-size: 16px; /* Make text inside input larger */
+  border-radius: 4px; /* Optional: rounded corners */
+  border: 1px solid #ccc; /* Optional: border style */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+.container button {
+  width: auto; /* button shrinks to fit its content */
+  align-self: center; /* optional: center the button horizontally */
+  padding: 8px 16px; /* add some padding for better size */
+  border-radius: 7px;
+}
+.container h1 {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
