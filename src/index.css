@@ -1,31 +1,76 @@
-.container {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #ad0bf8;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+/* General layout */
+.app-container {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
 }
-.container input {
-  width: 100%; /* Make input take full width of container */
-  height: 40px; /* Increase height */
-  padding: 8px 12px; /* Add some padding inside */
-  font-size: 16px; /* Make text inside input larger */
-  border-radius: 4px; /* Optional: rounded corners */
-  border: 1px solid #ccc; /* Optional: border style */
-  box-sizing: border-box; /* Include padding and border in width */
-}
-.container button {
-  width: auto; /* button shrinks to fit its content */
-  align-self: center; /* optional: center the button horizontally */
-  padding: 8px 16px; /* add some padding for better size */
-  border-radius: 7px;
-}
-.container h1 {
-  color: black;
-  font-size: 32px;
+
+/* Card style */
+.weather-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
   text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Button */
+.button {
+  padding: 10px;
+  width: 100%;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a148c;
+}
+
+/* Weather info box */
+.weather-info {
+  margin-top: 20px;
+  background-color: #f3e5f5;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.city-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.temperature,
+.description {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  color: #333;
 }
