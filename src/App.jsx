@@ -16,6 +16,7 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1df2cede64c8ab3d3c05307103cd6023&units=metric`
       );
       setWeather(response);
+      setCity("");
     } catch (err) {
       console.log("fetching data error", err);
     }
